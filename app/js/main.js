@@ -1,6 +1,4 @@
-var x = 'danial';
+var x = 'Danial';
 setTimeOut(function () {
-  x = 'pink';
+  x = 'Syed';
 },200);
-
-alert('dddada')

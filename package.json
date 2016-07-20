@@ -1,7 +1,7 @@
 {
-  "name": "learn_gulp",
+  "name": "gulp-starter",
   "version": "0.0.0",
-  "description": "learning gulp",
+  "description": "Gulp Starter Pack",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

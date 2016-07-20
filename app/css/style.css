@@ -1,22 +1,4 @@
-.testing {
-  width: 71.42857%;
-  background: red; }
-
-.danial {
-  width: 71.42857%;
-  color: yellow; }
-
-.pink {
-  width: 71.42857%;
-  color: yellow; }
-
-.balls {
-  width: 71.42857%; }
-
-.bat {
-  width: 71.42857%; }
-
-.ddd {
+.sdm-width {
   width: 71.42857%; }
 
 b {
@@ -26,18 +8,8 @@ b {
   transition: transform 1s, -webkit-transform 1s; }
 
 h1 {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
-a {
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s; }
-
-a {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-
-a {
-  border-radius: 5px; }
+  display: flex;
+  background-color: red; }

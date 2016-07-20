@@ -1,42 +1,14 @@
 $brand-color: red;
-$fav-color: yellow;
-.testing {
-  width: percentage(5/7);
-  background: $brand-color;
-}
-.danial {
-  width: percentage(5/7);
-  color: $fav-color;
-}
-.pink {
-  width: percentage(5/7);
-  color: $fav-color;
-}
-
-.balls {
-  width: percentage(5/7);
-}
-.bat {
+.sdm-width {
   width: percentage(5/7);
 }
 
-.ddd {
-  width: percentage(5/7);
-}
 b {
   transition: transform 1s;
 }
 
 h1 {
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-a {
-  transition: transform 1s;
-}
-a {
-    display: flex;
-}
-a {
-    border-radius: 5px;
+  display: flex;
+  background-color: $brand-color;
 }

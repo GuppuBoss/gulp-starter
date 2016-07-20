@@ -1,2 +1,1 @@
-var lib = 'munsif';
-var name = 'ali';
+var name = 'Danial Munsif';
