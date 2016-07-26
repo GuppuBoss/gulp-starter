@@ -19,3 +19,12 @@ Following Node Modules are included in this Gulp Starter Pack
 <li>gulp-image-optimization</li>
 
 </ul>
+
+No need to run -> npm install command all node modules are already included in starter pack.
+
+# check for updates
+-> npm install npm-check-updates -g
+In relevent project directory
+-> npm-check-updates
+# Update all
+-> npm-check-updates -u
