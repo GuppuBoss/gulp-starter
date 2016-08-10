@@ -1,14 +1,30 @@
 $brand-color: red;
-.sdm-width {
-  width: percentage(5/7);
+
+
+@mixin offset-margin($margin, $value){
+  margin-#{$margin}: $value;
 }
 
-b {
-  transition: transform 1s;
+@for $i from 1 through 10 {
+  @each $margin in top, left, bottom, right {
+
+    .sdm-offset-#{$margin}-#{5 * $i}{
+      @include offset-margin($margin, 5px * $i) 
+    }
+
+  }
 }
 
-h1 {
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  display: flex;
-  background-color: $brand-color;
+@mixin onset-padding($padding, $value){
+  padding-#{$padding}: $value;
+}
+
+@for $i from 1 through 10 {
+  @each $padding in top, left, bottom, right {
+
+    .sdm-onset-#{$padding}-#{5 * $i}{
+      @include onset-padding($padding, 5px * $i) 
+    }
+
+  }
 }
