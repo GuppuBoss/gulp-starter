@@ -28,3 +28,9 @@ In relevent project directory
 -> npm-check-updates
 # Update all
 -> npm-check-updates -u
+
+<h1>Fatal error: watch ENOSPC  FIX</h1>
+<p>Run below code if you get watch error. Solution works on Ubuntu 14.04</p>
+<code>
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+</code>
