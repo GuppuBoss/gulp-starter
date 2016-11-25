@@ -11,9 +11,8 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
 
-
 gulp.task('sass', function() {
-  return gulp.src('app/scss/**/*.scss')
+  return gulp.src('app/scss/style.scss')
   .pipe(sass())
   .pipe(autoprefixer())
   .pipe(gulp.dest('app/css'))
@@ -36,6 +35,11 @@ gulp.task('fonts', function () {
   .pipe(gulp.dest('dist/fonts'))
 });
 
+gulp.task('fontawesome', function () {
+  return gulp.src('app/fontawesome/**/*')
+  .pipe(gulp.dest('dist/fontawesome'))
+});
+
 gulp.task('browserSync', function() {
   browserSync.init({
     server : {
@@ -55,7 +59,7 @@ gulp.task('watch', ['browserSync', 'sass'],function () {
 });
 
 gulp.task('build', function(callback) {
-  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts'], callback);
+  runSequence('clean:dist', ['sass', 'useref', 'images', 'fonts', 'fontawesome'], callback);
 });
 
 gulp.task('default', function (callback) {
@@ -83,4 +87,14 @@ gulp.task('images', function () {
 //   return gulp.src('source-files')
 //   .pipe(aGulpPlugin())
 //   .pipe(gulp.dest('destination-files'))
+// });
+
+// gulp.task('sass', function() {
+//   return gulp.src('app/scss/**/*.scss')
+//   .pipe(sass())
+//   .pipe(autoprefixer())
+//   .pipe(gulp.dest('app/css'))
+//   .pipe(browserSync.reload({
+//     stream: true
+//   }))
 // });
