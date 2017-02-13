@@ -16,7 +16,7 @@ Following Node Modules are included in this Gulp Starter Pack
 <li>run-sequence</li>
 <li>gulp-autoprefixer</li>
 <li>es6-promise</li>
-<li>gulp-image-optimization</li>
+<li>gulp-imagemin</li>
 
 </ul>
 

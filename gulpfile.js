@@ -10,6 +10,7 @@ var cache = require('gulp-cache');
 var del = require('del');
 var runSequence = require('run-sequence');
 var autoprefixer = require('gulp-autoprefixer');
+var imagemin = require('gulp-imagemin');
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/style.scss')
@@ -68,15 +69,15 @@ gulp.task('default', function (callback) {
     )
 });
 
-
-
-var imageop = require('gulp-image-optimization');
-gulp.task('images', function () {
-   gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
-    .pipe(cache(imageop()))
+// Optimizing Images 
+gulp.task('images', function() {
+  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+    // Caching images that ran through imagemin
+    .pipe(cache(imagemin({
+      interlaced: true,
+    })))
     .pipe(gulp.dest('dist/images'))
 });
-
 
 
 // gulp.watch('file-to-watch', ['tasks', 'to', 'run'] );
