@@ -21,6 +21,12 @@ section {
   @include make-sm-column(8);
   @include make-sm-column-offset(2);
 }
+.vertical-content-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 // show animation on display block
 .label-primary {
     animation: grow .3s ease-in-out;
