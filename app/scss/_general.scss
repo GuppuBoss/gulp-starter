@@ -1,0 +1,68 @@
+html {
+  font-size: 16px;
+}
+body {
+    background: $bg-white;
+    font-family: $font-lato;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    font-family: $font-lato;
+      cursor: pointer;
+    text-decoration: none;
+      @include transition(all, 0.2s,cubic-bezier(0.42, 0, 0.58, 1));
+    &:hover {
+      text-decoration: none !important;
+      outline: none !important;
+    }
+    &:active, &:focus {
+      outline: none !important;
+      text-decoration: none !important;
+    }
+  }
+  strong, b {
+    font-weight: 700;
+  }
+   
+  em, i {
+    font-style: italic;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.3em;
+  }
+   
+  h1 {
+    font-size: 44px;
+    font-family: $font-raleway;
+    font-weight: 700;
+  }
+   
+  h2 {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+   
+  h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+   
+  h4 {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+   
+  h5 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+   
+  h6 {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+   

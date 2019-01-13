@@ -1,4 +1,1 @@
-var x = 'Danial';
-setTimeOut(function () {
-  x = 'Syed';
-},200);
+console.log("main js")
